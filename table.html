@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>admin pannel</title>
+    <!-- bootstrap 5 link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootstrap icon link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+
+    <!-- charts js link -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  </head>
+
+  <body>
+    <div class="container-fluid m-0 p-0">
+      <div class="row w-100 mx-auto gy-5">
+        <!-- aside bar start -->
+        <div class="col-lg-2 col-md-3 d-none d-lg-block d-md-block aside-bar">
+          <aside>
+            <h6 class="text-uppercase mt-4">notus react</h6>
+            <hr class="w-50" />
+            <p>admin layout pages</p>
+            <ul class="asidebar-menu p-0">
+              <li>
+                <a href="index.html"><i class="fa-solid fa-tv"></i> dashboard</a>
+              </li>
+              <li>
+                <a href="setting.html"><i class="fa-solid fa-screwdriver-wrench"></i>settings</a>
+              </li>
+              <li>
+                <a href="table.html"><i class="fa-solid fa-table"></i> tables</a>
+              </li>
+              <hr class="w-50" />
+              <p>admin layout pages</p>
+              <li>
+                <a href="login.html"><i class="fa-solid fa-fingerprint"></i>login</a>
+              </li>
+              <li>
+                <a href="register.html"><i class="fa-solid fa-clipboard-list"></i>register</a>
+              </li>
+              <hr class="w-50" />
+              <p>no layout pages</p>
+              <li>
+                <a href="landing.html"><i class="fa-solid fa-table"></i> landing page</a>
+              </li>
+              <li>
+                <a href="profile.html"><i class="fa-solid fa-map"></i>profile page</a>
+              </li>
+              <hr class="w-50" />
+              <p>documentation</p>
+              <li>
+                <a href="#"><i class="fa-solid fa-table"></i>styles</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-map"></i>css components</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-map"></i>angular</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-map"></i>javascript</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-map"></i>next js</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-map"></i>react</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-map"></i>svelte</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-map"></i>vue js</a>
+              </li>
+            </ul>
+          </aside>
+        </div>
+        <!-- aside bar end -->
+        <div class="col-lg-10 col-md-9 p-0 main-content">
+          <div class="">
+            <div class="bg-primary pb-5 hero">
+              <!-- navbar start -->
+              <nav class="navbar navbar-expand-lg navbar-expand-md">
+                <div class="container-fluid m-0 p-0">
+                  <button class="navbar-toggler ms-3" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link ms-5 text-uppercase fw-bold text-white" aria-current="page" href="#">dashboard</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex femo" role="search">
+                    <div class="d-flex align-items-center position-relative">
+                      <input class="form-control me-2 shadow-none border-0" type="search" placeholder="Search" aria-label="Search" />
+                      <div class="position-absolute">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </div>
+                    </div>
+                    <div class="navbar-pic">
+                      <img src="assets/images/navbar-img.jpg" class="img-fluid" alt="" />
+                    </div>
+                  </form>
+                  <!-- </div> -->
+                </div>
+              </nav>
+              <!-- navbar end -->
+
+              <!-- cards start -->
+            <section class="py-5">
+              <div class="container-fluid">
+                <div class="row w-100 mx-auto gy-5">
+                  <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                    <div class="bg-white p-3 rounded-2">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="card-content">
+                          <h6 class="fw-bold">TRAFFIC</h6>
+                          <h4 class="fw-semibold">350,897</h4>
+                        </div>
+                        <div class="card-icon">
+                          <i class="bi bi-bar-chart text-white rounded-circle"></i>
+                        </div>
+                      </div>
+                      <p class="card-p mt-3">
+                        <span class="text-success fw-semibold"><i class="fa-solid fa-arrow-up fw-bolder"></i> 3.48% </span>Since last month
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                    <div class="bg-white p-3 rounded-2">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="card-content">
+                          <h6 class="fw-bold">NEW USERS</h6>
+                          <h4 class="fw-semibold">2,356</h4>
+                        </div>
+                        <div class="card-icon">
+                          <i class="bi bi-pie-chart-fill text-white rounded-circle bg-warning"></i>
+                        </div>
+                      </div>
+                      <p class="card-p mt-3">
+                        <span class="text-danger fw-semibold"><i class="fa-solid fa-arrow-down fw-bolder"></i> 3.48% </span>Since last week
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                    <div class="bg-white p-3 rounded-2">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="card-content">
+                          <h6 class="fw-bold">SALES</h6>
+                          <h4 class="fw-semibold">924</h4>
+                        </div>
+                        <div class="card-icon">
+                          <i class="bi bi-people-fill rounded-circle bg-success text-white"></i>
+                        </div>
+                      </div>
+                      <p class="card-p mt-3">
+                        <span class="text-warning fw-semibold"><i class="fa-solid fa-arrow-down fw-bolder"></i> 3.48% </span>Since yesterday
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                    <div class="bg-white p-3 rounded-2">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="card-content">
+                          <h6>PERFORMANCE</h6>
+                          <h4>49,65%</h4>
+                        </div>
+                        <div class="card-icon">
+                          <i class="bi bi-percent text-white rounded-circle bg-info"></i>
+                        </div>
+                      </div>
+                      <p class="card-p mt-3">
+                        <span class="text-success fw-semibold"><i class="fa-solid fa-arrow-up fw-bolder"></i> 12% </span>Since last month
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- cards end -->
+            </div>
+            <!-- table start -->
+            <section class="bg-body-secondary">
+              <div class="container-fluid">
+                <div class="row w-100 mx-auto gu-5">
+                  <div>
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="position-relative table-overlay" style="min-height: 400px;width: 100%;">
+                    <div class="bg-white p-2 shadow position-absolute table-overlay2">
+                        <h6 class="text-uppercase table-up fw-semibold m-2">page visits</h6>
+                      <div class="table-responsive">
+                        <table class="table custom-table table-borderless align-middle">
+                          <thead class="text-uppercase table-secondary">
+                            <tr>
+                              <th scope="col">Project</th>
+                              <th scope="col">Budget</th>
+                              <th scope="col">Status</th>
+                              <th scope="col">Users</th>
+                              <th scope="col" colspan="2">Completion</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="fw-bolder">
+                                <div class="d-flex align-items-center gap-2">
+                                  <img src="assets/images/beta-img.jpg" class="img-fluid" alt="" />
+                                  <span>Argon Design System</span>
+                                </div>
+                              </td>
+                              <td>$2,500 USD</td>
+                              <td><i class="fa-solid fa-circle-dot text-danger"></i> pending</td>
+                              <td>
+                                <div class="avatar-group">
+                                  <img src="assets/images/user2.jpg" alt="User 1" class="avatar" />
+                                  <img src="assets/images/user3.jpg" alt="User 2" class="avatar" />
+                                  <img src="assets/images/user4.png" alt="User 3" class="avatar" />
+                                  <img src="assets/images/usre5.jpg" alt="User 4" class="avatar" />
+                                </div>
+                              </td>
+                              <td>
+                                <div class="d-flex align-items-center gap-2">
+                                  <span>60%</span>
+                                  <div class="progress w-100" style="height: 10px" role="progressbar" aria-label="Success example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-danger" style="width: 60%"></div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <li class="nav-item dropdown list-unstyled">
+                                  <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fa-solid fa-ellipsis-vertical"></i></a>
+                                  <ul class="dropdown-menu list-unstyled">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                  </ul>
+                                </li>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="fw-bolder">
+                                <div class="d-flex align-items-center gap-2">
+                                  <img src="assets/images/alpha.jpg" class="img-fluid" alt="" />
+                                  <span>Angular Now UI Kit PRO</span>
+                                </div>
+                              </td>
+                              <td>$1,800 USD</td>
+                              <td><i class="fa-solid fa-circle-dot text-success"></i> completed</td>
+                              <td>
+                                <div class="avatar-group">
+                                  <img src="assets/images/user2.jpg" alt="User 1" class="avatar" />
+                                  <img src="assets/images/user3.jpg" alt="User 2" class="avatar" />
+                                  <img src="assets/images/user4.png" alt="User 3" class="avatar" />
+                                  <img src="assets/images/usre5.jpg" alt="User 4" class="avatar" />
+                                </div>
+                              </td>
+                              <td>
+                                <div class="d-flex align-items-center gap-2">
+                                  <span>100%</span>
+                                  <div class="progress w-100" style="height: 10px" role="progressbar" aria-label="Success example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-success" style="width: 100%"></div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <li class="nav-item dropdown list-unstyled">
+                                  <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fa-solid fa-ellipsis-vertical"></i></a>
+                                  <ul class="dropdown-menu list-unstyled">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                  </ul>
+                                </li>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="fw-bolder">
+                                <div class="d-flex align-items-center gap-2">
+                                  <img src="assets/images/diamond.jpg" class="img-fluid" alt="" />
+                                  <span>Black Dashboard Sketch</span>
+                                </div>
+                              </td>
+                              <td>$3,150 USD</td>
+                              <td><i class="fa-solid fa-circle-dot text-warning"></i> delayed</td>
+                              <td>
+                                <div class="avatar-group">
+                                  <img src="assets/images/user2.jpg" alt="User 1" class="avatar" />
+                                  <img src="assets/images/user3.jpg" alt="User 2" class="avatar" />
+                                  <img src="assets/images/user4.png" alt="User 3" class="avatar" />
+                                  <img src="assets/images/usre5.jpg" alt="User 4" class="avatar" />
+                                </div>
+                              </td>
+                              <td>
+                                <div class="d-flex align-items-center gap-2">
+                                  <span>73%</span>
+                                  <div class="progress w-100" style="height: 10px" role="progressbar" aria-label="Success example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-warning" style="width: 70%"></div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <li class="nav-item dropdown list-unstyled">
+                                  <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fa-solid fa-ellipsis-vertical"></i></a>
+                                  <ul class="dropdown-menu list-unstyled">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                  </ul>
+                                </li>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="fw-bolder">
+                                <div class="d-flex align-items-center gap-2">
+                                  <img src="assets/images/react.jpg" class="img-fluid" alt="" />
+                                  <span>React Material Dashboard</span>
+                                </div>
+                              </td>
+                              <td>$4,400 USD</td>
+                              <td><i class="fa-solid fa-circle-dot text-info"></i> on schedule</td>
+                              <td>
+                                <div class="avatar-group">
+                                  <img src="assets/images/user2.jpg" alt="User 1" class="avatar" />
+                                  <img src="assets/images/user3.jpg" alt="User 2" class="avatar" />
+                                  <img src="assets/images/user4.png" alt="User 3" class="avatar" />
+                                  <img src="assets/images/usre5.jpg" alt="User 4" class="avatar" />
+                                </div>
+                              </td>
+                              <td>
+                                <div class="d-flex align-items-center gap-2">
+                                  <span>90%</span>
+                                  <div class="progress w-100" style="height: 10px" role="progressbar" aria-label="Success example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-info" style="width: 90%"></div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <li class="nav-item dropdown list-unstyled">
+                                  <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fa-solid fa-ellipsis-vertical"></i></a>
+                                  <ul class="dropdown-menu list-unstyled">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                  </ul>
+                                </li>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="fw-bolder">
+                                <div class="d-flex align-items-center gap-2">
+                                  <img src="assets/images/v.jpg" class="img-fluid" alt="" />
+                                  <span>React Material Dashboard</span>
+                                </div>
+                              </td>
+                              <td>$2,200 USD</td>
+                              <td><i class="fa-solid fa-circle-dot text-success"></i> completed</td>
+                              <td>
+                                <div class="avatar-group">
+                                  <img src="assets/images/user2.jpg" alt="User 1" class="avatar" />
+                                  <img src="assets/images/user3.jpg" alt="User 2" class="avatar" />
+                                  <img src="assets/images/user4.png" alt="User 3" class="avatar" />
+                                  <img src="assets/images/usre5.jpg" alt="User 4" class="avatar" />
+                                </div>
+                              </td>
+                              <td>
+                                <div class="d-flex align-items-center gap-2">
+                                  <span>100%</span>
+                                  <div class="progress w-100" style="height: 10px" role="progressbar" aria-label="Success example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-success" style="width: 100%"></div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <li class="nav-item dropdown list-unstyled">
+                                  <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fa-solid fa-ellipsis-vertical"></i></a>
+                                  <ul class="dropdown-menu list-unstyled">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                  </ul>
+                                </li>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- table end -->
+
+               <!-- table start -->
+            <section class="bg-body-secondary pb-0">
+              <div class="container-fluid">
+                <div class="row w-100 mx-auto gu-5">
+                  <div>
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class=" p-2 shadow table-content">
+                        <h6 class="text-uppercase table-up fw-semibold m-2 text-white">page visits</h6>
+                      <div class="table-responsive">
+                        <table class="table custom-table custom-table2 table-borderless align-middle">
+                          <thead class="text-uppercase table-secondary">
+                            <tr>
+                              <th scope="col">Project</th>
+                              <th scope="col">Budget</th>
+                              <th scope="col">Status</th>
+                              <th scope="col">Users</th>
+                              <th scope="col" colspan="2">Completion</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="fw-bolder">
+                                <div class="d-flex align-items-center gap-2">
+                                  <img src="assets/images/beta-img.jpg" class="img-fluid" alt="" />
+                                  <span>Argon Design System</span>
+                                </div>
+                              </td>
+                              <td>$2,500 USD</td>
+                              <td><i class="fa-solid fa-circle-dot text-danger"></i> pending</td>
+                              <td>
+                                <div class="avatar-group">
+                                  <img src="assets/images/user2.jpg" alt="User 1" class="avatar" />
+                                  <img src="assets/images/user3.jpg" alt="User 2" class="avatar" />
+                                  <img src="assets/images/user4.png" alt="User 3" class="avatar" />
+                                  <img src="assets/images/usre5.jpg" alt="User 4" class="avatar" />
+                                </div>
+                              </td>
+                              <td>
+                                <div class="d-flex align-items-center gap-2">
+                                  <span>60%</span>
+                                  <div class="progress w-100" style="height: 10px" role="progressbar" aria-label="Success example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-danger" style="width: 60%"></div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <li class="nav-item dropdown list-unstyled">
+                                  <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fa-solid fa-ellipsis-vertical"></i></a>
+                                  <ul class="dropdown-menu list-unstyled">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                  </ul>
+                                </li>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="fw-bolder">
+                                <div class="d-flex align-items-center gap-2">
+                                  <img src="assets/images/alpha.jpg" class="img-fluid" alt="" />
+                                  <span>Angular Now UI Kit PRO</span>
+                                </div>
+                              </td>
+                              <td>$1,800 USD</td>
+                              <td><i class="fa-solid fa-circle-dot text-success"></i> completed</td>
+                              <td>
+                                <div class="avatar-group">
+                                  <img src="assets/images/user2.jpg" alt="User 1" class="avatar" />
+                                  <img src="assets/images/user3.jpg" alt="User 2" class="avatar" />
+                                  <img src="assets/images/user4.png" alt="User 3" class="avatar" />
+                                  <img src="assets/images/usre5.jpg" alt="User 4" class="avatar" />
+                                </div>
+                              </td>
+                              <td>
+                                <div class="d-flex align-items-center gap-2">
+                                  <span>100%</span>
+                                  <div class="progress w-100" style="height: 10px" role="progressbar" aria-label="Success example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-success" style="width: 100%"></div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <li class="nav-item dropdown list-unstyled">
+                                  <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fa-solid fa-ellipsis-vertical"></i></a>
+                                  <ul class="dropdown-menu list-unstyled">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                  </ul>
+                                </li>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="fw-bolder">
+                                <div class="d-flex align-items-center gap-2">
+                                  <img src="assets/images/diamond.jpg" class="img-fluid" alt="" />
+                                  <span>Black Dashboard Sketch</span>
+                                </div>
+                              </td>
+                              <td>$3,150 USD</td>
+                              <td><i class="fa-solid fa-circle-dot text-warning"></i> delayed</td>
+                              <td>
+                                <div class="avatar-group">
+                                  <img src="assets/images/user2.jpg" alt="User 1" class="avatar" />
+                                  <img src="assets/images/user3.jpg" alt="User 2" class="avatar" />
+                                  <img src="assets/images/user4.png" alt="User 3" class="avatar" />
+                                  <img src="assets/images/usre5.jpg" alt="User 4" class="avatar" />
+                                </div>
+                              </td>
+                              <td>
+                                <div class="d-flex align-items-center gap-2">
+                                  <span>73%</span>
+                                  <div class="progress w-100" style="height: 10px" role="progressbar" aria-label="Success example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-warning" style="width: 70%"></div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <li class="nav-item dropdown list-unstyled">
+                                  <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fa-solid fa-ellipsis-vertical"></i></a>
+                                  <ul class="dropdown-menu list-unstyled">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                  </ul>
+                                </li>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="fw-bolder">
+                                <div class="d-flex align-items-center gap-2">
+                                  <img src="assets/images/react.jpg" class="img-fluid" alt="" />
+                                  <span>React Material Dashboard</span>
+                                </div>
+                              </td>
+                              <td>$4,400 USD</td>
+                              <td><i class="fa-solid fa-circle-dot text-info"></i> on schedule</td>
+                              <td>
+                                <div class="avatar-group">
+                                  <img src="assets/images/user2.jpg" alt="User 1" class="avatar" />
+                                  <img src="assets/images/user3.jpg" alt="User 2" class="avatar" />
+                                  <img src="assets/images/user4.png" alt="User 3" class="avatar" />
+                                  <img src="assets/images/usre5.jpg" alt="User 4" class="avatar" />
+                                </div>
+                              </td>
+                              <td>
+                                <div class="d-flex align-items-center gap-2">
+                                  <span>90%</span>
+                                  <div class="progress w-100" style="height: 10px" role="progressbar" aria-label="Success example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-info" style="width: 90%"></div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <li class="nav-item dropdown list-unstyled">
+                                  <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fa-solid fa-ellipsis-vertical"></i></a>
+                                  <ul class="dropdown-menu list-unstyled">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                  </ul>
+                                </li>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="fw-bolder">
+                                <div class="d-flex align-items-center gap-2">
+                                  <img src="assets/images/v.jpg" class="img-fluid" alt="" />
+                                  <span>React Material Dashboard</span>
+                                </div>
+                              </td>
+                              <td>$2,200 USD</td>
+                              <td><i class="fa-solid fa-circle-dot text-success"></i> completed</td>
+                              <td>
+                                <div class="avatar-group">
+                                  <img src="assets/images/user2.jpg" alt="User 1" class="avatar" />
+                                  <img src="assets/images/user3.jpg" alt="User 2" class="avatar" />
+                                  <img src="assets/images/user4.png" alt="User 3" class="avatar" />
+                                  <img src="assets/images/usre5.jpg" alt="User 4" class="avatar" />
+                                </div>
+                              </td>
+                              <td>
+                                <div class="d-flex align-items-center gap-2">
+                                  <span>100%</span>
+                                  <div class="progress w-100" style="height: 10px" role="progressbar" aria-label="Success example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-success" style="width: 100%"></div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <li class="nav-item dropdown list-unstyled">
+                                  <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fa-solid fa-ellipsis-vertical"></i></a>
+                                  <ul class="dropdown-menu list-unstyled">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                  </ul>
+                                </li>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- table end -->
+
+   <!-- footer start -->
+          <footer class="bg-body-secondary">
+            <div class="container-fluid">
+              <div class="row w-100 mx-auto">
+                <div class="col-lg-6 col-md-12 col-sm-12 mt-3">
+                  <p class="fw-semibold text-center">Copyright © 2025 Creative Tim | Distributed by ThemeWagon</p>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 mt-3">
+                  <ul class="list-unstyled d-flex gap-3 align-items-center justify-content-center">
+                    <li><a href="#" class="text-decoration-none fw-semibold">Creative Tim</a></li>
+                    <li><a href="#" class="text-decoration-none fw-semibold">About Us</a></li>
+                    <li><a href="#" class="text-decoration-none fw-semibold">Blog</a></li>
+                    <li><a href="#" class="text-decoration-none fw-semibold">MIT License</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </footer>
+          <!-- footer end -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- aside bar Show on the device 430px -->
+
+    <div class="offcanvas offcanvas-start d-none d-sm-block" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">notus react</h5>
+        <button type="button" class="btn-close bg-body-secondary" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <!-- <div class=" bg-secondary-subtle "> -->
+        <aside>
+          <h6 class="text-uppercase mt-4">notus react</h6>
+          <hr class="w-50" />
+          <p>admin layout pages</p>
+          <ul class="asidebar-menu p-0">
+            <li>
+              <a href="index.html"><i class="fa-solid fa-tv"></i> dashboard</a>
+            </li>
+            <li>
+              <a href="setting.html"><i class="fa-solid fa-screwdriver-wrench"></i>settings</a>
+            </li>
+            <li>
+              <a href="table.html"><i class="fa-solid fa-table"></i> tables</a>
+            </li>
+            <hr class="w-50" />
+            <p>admin layout pages</p>
+            <li>
+              <a href="login.html"><i class="fa-solid fa-fingerprint"></i>login</a>
+            </li>
+            <li>
+              <a href="register.html"><i class="fa-solid fa-clipboard-list"></i>register</a>
+            </li>
+            <hr class="w-50" />
+            <p>no layout pages</p>
+            <li>
+              <a href="#"><i class="fa-solid fa-table"></i> landing page</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-map"></i>profile page</a>
+            </li>
+            <hr class="w-50" />
+            <p>documentation</p>
+            <li>
+              <a href="#"><i class="fa-solid fa-table"></i>styles</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-map"></i>css components</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-map"></i>angular</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-map"></i>javascript</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-map"></i>next js</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-map"></i>react</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-map"></i>svelte</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-map"></i>vue js</a>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+
+    <!-- js link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+  <script src="assets/js/script.js"></script>
+</html>

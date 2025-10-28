@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>account</title>
+    <!-- bootstrap 5 link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootstrap icon link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+
+    <!-- charts js link -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  </head>
+
+  <body>
+    <div class="main-login">
+      <!-- header start -->
+      <header class="">
+        <!-- navbar start -->
+        <nav class="navbar navbar-expand-lg main-text">
+          <div class="container">
+            <a class="navbar-brand text-white fw-bold" href="#">Notus react</a>
+            <a href="#" class="active text-decoration-none text-white fw-bold d-none d-lg-block"><i class="fa-solid fa-file-zipper"></i> DOCS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown">
+                  <a class="nav-link ss text-white fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">DEMO PAGES</a>
+                  <ul class="dropdown-menu p-2">
+                    <p>admin layout</p>
+                    <li><a class="dropdown-item" href="index.html">Dashboard</a></li>
+                    <li><a class="dropdown-item" href="setting.html">Settings</a></li>
+                    <li><a class="dropdown-item" href="table.html">Tables</a></li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <p>Auth Layout</p>
+                    <li><a class="dropdown-item" href="login.html">Login</a></li>
+                    <li><a class="dropdown-item" href="register.html">Register</a></li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <p>no Layout</p>
+                    <li><a class="dropdown-item" href="landing.html">landing</a></li>
+                    <li><a class="dropdown-item" href="profile.html">profile</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white fw-bold" href="#"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white fw-bold" href="#"><i class="fa-brands fa-github"></i></a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link text-white fw-bold" href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- navbar end -->
+      </header>
+      <!-- header end -->
+
+      <!-- register form start -->
+      <section class="py-5 login">
+        <div class="container">
+          <div class="row w-100 mx-auto gy-5 justify-content-center">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+              <div class="bg-body-secondary p-5 pt-4 rounded-3">
+              <form>
+                <p class="fw-bolder">Sign in with</p>
+                <div class="text-center login-btn">
+                  <button class="btn bg-white text-uppercase fw-bold"><i class="fa-brands fa-github"></i> git hub</button>
+                  <button class="btn bg-white text-uppercase fw-bold"><i class="fa-brands fa-google"></i> google</button>
+                </div>
+                <hr class="mt-4" />
+                <p class="text-secondary fw-semibold">Or sign in with credentials</p>
+                 <div class="mb-3">
+                  <label for="exampleInputName" class="form-label text-uppercase fw-bold">Name</label>
+                  <input type="text" class="form-control shadow-none" id="exampleInputName" placeholder="Name" aria-describedby="emailHelp" />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label text-uppercase fw-bold">Email</label>
+                  <input type="email" class="form-control shadow-none" id="exampleInputEmail1" placeholder="Email" aria-describedby="emailHelp" />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label text-uppercase fw-bold">Password</label>
+                  <input type="password" class="form-control shadow-none" id="exampleInputPassword1" placeholder="Password" />
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input shadow-none border-2 p-2" id="exampleCheck1" />
+                  <label class="form-check-label" for="exampleCheck1 text-uppercase fw-bold">I agree with the <span class="text-info">Privacy Policy</span></label>
+                </div>
+                <button type="submit" class="btn btn-primary w-100 text-uppercase border-0">create account</button>
+              </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="w-75 border-3 border-info m-auto" />
+      <!-- register form end -->
+
+      <!-- footer start -->
+      <footer class="">
+        <div class="container-fluid">
+          <div class="row w-100 mx-auto">
+            <div class="col-lg-6 col-md-12 col-sm-12 mt-3">
+              <p>Copyright © 2025 <span class="text-white">Creative Tim</span> | Distributed by <span class="text-white">ThemeWagon</span></p>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 mt-3">
+              <ul class="list-unstyled d-flex gap-3 align-items-center justify-content-center">
+                <li><a href="#" class="text-white text-decoration-none">Creative Tim</a></li>
+                <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Blog</a></li>
+                <li><a href="#" class="text-white text-decoration-none">MIT License</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- footer end -->
+    </div>
+
+    <!-- js link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+  <script src="assets/js/script.js"></script>
+</html>

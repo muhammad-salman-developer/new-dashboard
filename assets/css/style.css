@@ -1,0 +1,581 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+/* aside bar */
+.aside h6 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #475569;
+}
+
+.asidebar-menu {
+  list-style: none;
+}
+
+.asidebar-menu li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  color: #334155;
+  transition: all ease-in-out 0.5s;
+}
+
+.asidebar-menu li {
+  margin-top: 20px;
+}
+
+.asidebar-menu li a i {
+  color: #cbd5e2;
+  margin-right: 10px;
+}
+
+.asidebar-menu li a:hover {
+  color: #cbd5e2;
+}
+
+.aside-bar {
+  height: 100vh;
+  overflow-x: hidden;
+  position: fixed;
+  background-color: #e94797;
+}
+
+aside p {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgb(100, 116, 139);
+}
+
+.main-content {
+  width: 83%;
+  margin-left: 220px;
+}
+
+/* navbar */
+
+.femo i {
+  padding-left: 10px;
+  color: #cbd5e2;
+}
+
+.femo input {
+  padding: 10px;
+  padding-left: 30px;
+  width: 200px;
+}
+
+.femo input::placeholder {
+  color: #cbd5e2;
+}
+
+.navbar-pic img {
+  width: 40px !important;
+  border-radius: 50px;
+  margin-right: 25px;
+}
+
+/* cards */
+.card-icon i {
+  background-color: #ef4444;
+  padding: 13px;
+}
+
+.card-content h4 {
+  font-size: 20px;
+  color: #334155;
+}
+
+.card-content h6 {
+  font-size: 12px;
+  color: rgb(148, 163, 184);
+}
+
+.card-p {
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+
+/* table start */
+table.custom-table,
+tr,
+td {
+  font-size: 12px !important;
+  color: rgb(51, 65, 85) !important;
+  font-weight: 400;
+}
+
+table.custom-table,
+th {
+  font-size: 12px !important;
+  color: rgb(100, 116, 139) !important;
+  font-weight: 600;
+}
+.table-up {
+  color: rgb(51, 65, 85);
+}
+
+/* footer */
+footer p {
+  color: rgb(100, 116, 139);
+  font-size: 14px;
+}
+
+footer ul li a {
+  font-size: 14px;
+  color: rgb(30, 41, 59);
+}
+
+/* ++++++++ settings ++++++++ */
+.form-control{
+  padding: 10px;
+}
+.form-control:focus{
+  border: 2px solid blue;
+}
+.form-label, .form-check-label{
+ font-size: 12px;
+  color: rgb(71, 85, 105);
+}
+.form-control::placeholder{
+ color: rgb(71, 85, 105);
+  font-size: 12px !important;
+  font-weight: 400;
+}
+.setting h6 {
+  font-size: 20px;
+  color: rgb(51, 65, 85);
+}
+
+.setting button.btn-setting {
+  font-size: 12px;
+}
+
+.setting p {
+  font-size: 14px;
+  color: rgb(148, 163, 184);
+}
+
+.setting-img img {
+  width: 150px;
+  border-radius: 80px;
+}
+
+.setting-side h6 {
+  color: rgb(71, 85, 105);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.setting-side p {
+  color: rgb(148, 163, 184);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.setting-content p {
+  font-size: 16px;
+  text-align: center;
+  color: rgb(71, 85, 105);
+  margin-top: 25px;
+}
+
+.setting-content h5 {
+  color: rgb(148, 163, 184);
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.setting-content h4 {
+  color: rgb(51, 65, 85);
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.setting-content .paragraph {
+  font-size: 18px !important;
+  color: rgb(51, 65, 85) !important;
+  width: 170px;
+  margin: auto;
+  line-height: 29px;
+}
+
+fieldset {
+  padding: 10px 8px;
+}
+
+/* ++++++++ table start ++++++++++++ */
+table.custom-table tr td img {
+  width: 40px;
+  border: 2px solid #cbd5e2;
+  border-radius: 50px;
+}
+
+.avatar-group {
+  position: relative;
+  display: flex;
+}
+
+.avatar {
+  position: relative;
+  margin-left: -15px;
+}
+
+.avatar:first-child {
+  margin-left: 0;
+}
+
+.table-overlay {
+  min-height: 400px !important;
+  width: 100% !important;
+}
+
+.table-overlay2 {
+  margin-top: -70px !important;
+  width: 100% !important;
+}
+
+.custom-table2 td {
+  background-color: #0C4A6E !important;
+  color: white !important;
+}
+
+.table-content {
+  background-color: #0C4A6E !important;
+}
+
+.custom-table2 th {
+  background-color: #075985 !important;
+  color: white !important;
+}
+
+/* +++++ login +++++ */
+.main-login {
+  background-image: url(/assets/images/login-img);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #334155;
+}
+
+.main-text .navbar-brand {
+  font-size: 14px;
+}
+
+.main-text .active {
+  font-size: 12px;
+}
+
+.main-text .nav-link {
+  font-size: 12px;
+}
+
+.main-text .nav-link i {
+  font-size: 18px;
+}
+
+.nav-link.ss:focus {
+  color: white !important;
+}
+
+.login-btn button {
+  transition: all ease 0.3s;
+  font-size: 12px;
+  color: rgb(51, 65, 85) !important;
+}
+
+.login-btn button:hover {
+  transform: translateY(-2px);
+}
+
+.login p {
+  font-size: 14px;
+  color: rgb(100, 116, 139);
+  text-align: center;
+}
+
+
+.login button[type=submit] {
+  background-color: #1E293B;
+  font-size: 16px;
+}
+
+.login button[type=submit]:focus {
+  background-color: #1E293B;
+}
+
+.login-link{
+  font-size: 13px !important;
+}
+.main-text .dropdown-menu li a {
+  font-size: 14px;
+  color: rgb(51, 65, 85);
+  text-transform: capitalize;
+  margin-top: 10px;
+}
+.main-text .dropdown-menu li a:hover {
+  background-color: transparent;
+}
+.main-text .dropdown-menu p {
+  font-size: 14px;
+  font-weight: 700;
+  color: rgb(148, 163, 184);
+  text-transform: capitalize;
+}
+
+.main-text footer a {
+  transition: all ease .3s;
+}
+
+.main-text footer a:hover {
+  color: #1E293B !important;
+}
+
+/* ++++++ profile ++++++++ */
+.profile-main {
+  background-image: url(/assets/images/profile.avif);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 70vh;
+}
+
+.profile-pic img {
+  width: 150px;
+}
+
+.profile-content h4 {
+  font-size: 36px;
+  color: rgb(51, 65, 85);
+}
+
+.profile-content h5 {
+  font-size: 14px;
+  color: rgb(148, 163, 184);
+  line-height: 21px;
+}
+
+.profile-content p {
+  font-size: 16px;
+  text-align: center;
+  color: rgb(71, 85, 105);
+  margin-top: 25px;
+}
+
+.profile-set {
+  top: -90px;
+  left: 1%;
+}
+
+.profile-footer h3 {
+  color: rgb(51, 65, 85);
+  font-size: 30px;
+}
+
+.profile-footer p {
+  color: rgb(71, 85, 105);
+  font-size: 18px;
+}
+
+.profile-footer i {
+  width: 30px;
+}
+
+.profile-footer h6 {
+  color: rgb(100, 116, 139);
+}
+
+.profile-footer ul li a {
+  color: rgb(100, 116, 139);
+  transition: all ease-in-out .5s;
+}
+
+.profile-footer ul li a:hover {
+  color: #1E293B;
+}
+
+.end-footer p {
+  color: rgb(100, 116, 139);
+  font-size: 14px;
+}
+
+.end-footer span:hover {
+  color: #1E293B;
+}
+
+/* ++++++++++ landing +++++++++++++ */
+.landing-main {
+  background-image: url(/assets/images/landing-img.avif);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.hero-content h3 {
+  font-size: 48px !important;
+}
+
+.hero {
+  min-height: 80vh;
+}
+
+.landing-card h6 {
+  font-size: 20px;
+  color: rgb(51, 65, 85);
+}
+
+.landing-card p {
+  color: rgb(100, 116, 139);
+}
+
+.landing-card i,
+.build i {
+  width: 40px;
+  padding: 13px;
+}
+
+/* working */
+.working h2,
+.growing h2 {
+  color: rgb(51, 65, 85);
+  font-size: 30px;
+}
+
+.working p {
+  color: rgb(71, 85, 105);
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.working h6 {
+  color: rgb(51, 65, 85);
+}
+
+.working i {
+  width: 58px;
+  padding: 18px;
+  color:rgb(100, 116, 139);
+  font-weight: 900;
+}
+
+/* growing */
+.growing-pic img{
+  height: 70vh;
+}
+.growing p{
+  color:rgb(100, 116, 139);
+}
+.growing .para{
+  color: rgb(100, 116, 139);
+  font-size: 18px;
+}
+.growing i{
+  width: 40px;
+  padding: 10px;
+}
+.growing .icon{
+  width: 50px;
+  padding: 19px;
+}
+/* our hero */
+.our-heros h1{
+  color:rgb(51, 65, 85) ;
+  font-size: 36px;
+}
+.our-heros p{
+  color: rgb(148, 163, 184);
+  font-size: 18px;
+  width: 70%;
+  margin: auto;
+}
+.our-hero img{
+  width: 150px;
+}
+.our-hero i {
+  width: 30px;
+}
+.our-hero h5{
+  color: rgb(51, 65, 85);
+  font-size: 20px;
+}
+.our-hero p{
+  color: rgb(148, 163, 184);
+  font-size: 14px;
+}
+/* build */
+.build{
+  background-color: #1E293A;
+}
+.build p{
+  color:rgb(148, 163, 184);
+  width: 70%;
+}
+.landing-form{
+  background-color: #1E293A;
+}
+.landing-form h4{
+  color: 
+rgb(51, 65, 85);
+font-size: 24px;
+}
+.landing-form p{
+  color:rgb(100, 116, 139);
+}
+@media (max-width: 768px) {
+  .profile-set {
+    position: absolute;
+    left: 0px !important;
+  }
+
+  .profile-main {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 430px) {
+  .femo {
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .main-content {
+    margin-left: 0;
+    width: 100% !important;
+  }
+
+  .profile-set {
+    position: absolute;
+    left: 0px !important;
+  }
+
+  .profile-footer {
+    margin-top: 30px;
+  }
+
+  .profile-main {
+    height: 40vh;
+  }
+
+  .setting-side2 {
+    flex-direction: column;
+    text-align: left;
+  }
+
+}
