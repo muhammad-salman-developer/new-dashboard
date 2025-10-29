@@ -43,10 +43,9 @@
 }
 
 .aside-bar {
-  height: 100vh;
+  height:100vh !important;
   overflow-x: hidden;
   position: fixed;
-  background-color: #e94797;
 }
 
 aside p {
@@ -62,21 +61,6 @@ aside p {
 }
 
 /* navbar */
-
-.femo i {
-  padding-left: 10px;
-  color: #cbd5e2;
-}
-
-.femo input {
-  padding: 10px;
-  padding-left: 30px;
-  width: 200px;
-}
-
-.femo input::placeholder {
-  color: #cbd5e2;
-}
 
 .navbar-pic img {
   width: 40px !important;
@@ -432,9 +416,7 @@ table.custom-table tr td img {
   font-size: 48px !important;
 }
 
-.hero {
-  min-height: 80vh;
-}
+
 
 .landing-card h6 {
   font-size: 20px;
@@ -546,6 +528,9 @@ font-size: 24px;
 
   .profile-main {
     height: 50vh;
+  }
+  .profile-content .paragraph{
+    /* width: 100%; */
   }
 }
 
