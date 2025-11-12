@@ -7,8 +7,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-
-
 /* aside bar */
 .aside h6 {
   font-size: 14px;
@@ -42,11 +40,15 @@
   color: #cbd5e2;
 }
 
-.aside-bar {
+.asidebar-menu li a i {
+  font-size: 17px !important;
+}
+
+/* .aside-bar {
   height:100vh !important;
   overflow-x: hidden;
   position: fixed;
-}
+} */
 
 aside p {
   font-size: 12px;
@@ -55,10 +57,10 @@ aside p {
   color: rgb(100, 116, 139);
 }
 
-.main-content {
+/* .main-content {
   width: 83%;
   margin-left: 220px;
-}
+} */
 
 /* navbar */
 
@@ -67,6 +69,9 @@ aside p {
   border-radius: 50px;
   margin-right: 25px;
 }
+
+
+
 
 /* cards */
 .card-icon i {
@@ -105,6 +110,7 @@ th {
   color: rgb(100, 116, 139) !important;
   font-weight: 600;
 }
+
 .table-up {
   color: rgb(51, 65, 85);
 }
@@ -121,21 +127,27 @@ footer ul li a {
 }
 
 /* ++++++++ settings ++++++++ */
-.form-control{
-  padding: 10px;
+.form-control {
+  padding: 10px !important;
+  box-shadow: none !important;
 }
-.form-control:focus{
-  border: 2px solid blue;
+
+.form-control:focus {
+  outline: 2px solid blue;
 }
-.form-label, .form-check-label{
- font-size: 12px;
+
+.form-label,
+.form-check-label {
+  font-size: 12px;
   color: rgb(71, 85, 105);
 }
-.form-control::placeholder{
- color: rgb(71, 85, 105);
+
+.form-control::placeholder {
+  color: rgb(71, 85, 105);
   font-size: 12px !important;
   font-weight: 400;
 }
+
 .setting h6 {
   font-size: 20px;
   color: rgb(51, 65, 85);
@@ -243,6 +255,34 @@ table.custom-table tr td img {
   color: white !important;
 }
 
+.custom-table2{
+  background-color: #075985 !important;
+}
+
+/* +++++ data table ++++ */
+.dt-paging .pagination .page-item .page-link {
+  box-shadow: none !important;
+  color: #0DCAF0;
+}
+
+.dt-paging ul li button:hover {
+  color: #0DCAF0;
+}
+
+.dt-paging .pagination .page-item.active .page-link {
+  background-color: #0DCAF0;
+  color: white;
+  border: 2px solid #0DCAF0;
+}
+
+.form-select {
+  box-shadow: none !important;
+}
+
+.form-select:focus {
+  outline: 1px solid #0DCAF0;
+}
+
 /* +++++ login +++++ */
 .main-login {
   background-image: url(/assets/images/login-img);
@@ -300,18 +340,21 @@ table.custom-table tr td img {
   background-color: #1E293B;
 }
 
-.login-link{
+.login-link {
   font-size: 13px !important;
 }
+
 .main-text .dropdown-menu li a {
   font-size: 14px;
   color: rgb(51, 65, 85);
   text-transform: capitalize;
   margin-top: 10px;
 }
+
 .main-text .dropdown-menu li a:hover {
   background-color: transparent;
 }
+
 .main-text .dropdown-menu p {
   font-size: 14px;
   font-weight: 700;
@@ -361,7 +404,7 @@ table.custom-table tr td img {
 }
 
 .profile-set {
-  top: -90px;
+  top: -190px;
   left: 1%;
 }
 
@@ -408,6 +451,8 @@ table.custom-table tr td img {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  background-blend-mode: soft-light;
+  background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
   height: 100vh;
 }
@@ -453,84 +498,145 @@ table.custom-table tr td img {
 .working i {
   width: 58px;
   padding: 18px;
-  color:rgb(100, 116, 139);
+  color: rgb(100, 116, 139);
   font-weight: 900;
 }
 
+.working-img img {
+  height: 40vh;
+  object-fit: cover;
+}
+
+.working .paras {
+  text-align: justify;
+}
+
+
 /* growing */
-.growing-pic img{
+.growing-pic img {
   height: 70vh;
+  transition: all ease .5s;
+
 }
-.growing p{
-  color:rgb(100, 116, 139);
+
+.growing-pic {
+  width: 300px;
+  overflow: hidden;
+  border-radius: 20px;
 }
-.growing .para{
+
+.growing-pic img:hover {
+  transform: scale(1.1);
+}
+
+.growing p {
+  color: rgb(100, 116, 139);
+}
+
+.growing .para {
   color: rgb(100, 116, 139);
   font-size: 18px;
 }
-.growing i{
+
+.growing i {
   width: 40px;
   padding: 10px;
 }
-.growing .icon{
+
+.growing .icon {
   width: 50px;
   padding: 19px;
 }
+
+
 /* our hero */
-.our-heros h1{
-  color:rgb(51, 65, 85) ;
+.our-heros h1 {
+  color: rgb(51, 65, 85);
   font-size: 36px;
 }
-.our-heros p{
+
+.our-heros p {
   color: rgb(148, 163, 184);
   font-size: 18px;
   width: 70%;
   margin: auto;
 }
-.our-hero img{
+
+.our-hero-pic img {
   width: 150px;
+  transition: all ease .1s;
 }
+
+.our-hero-pic {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.our-hero img:hover {
+  transform: scale(1.1);
+}
+
 .our-hero i {
   width: 30px;
 }
-.our-hero h5{
+
+.our-hero h5 {
   color: rgb(51, 65, 85);
   font-size: 20px;
 }
-.our-hero p{
+
+.our-hero p {
   color: rgb(148, 163, 184);
   font-size: 14px;
 }
+
+
 /* build */
-.build{
+.build {
   background-color: #1E293A;
 }
-.build p{
-  color:rgb(148, 163, 184);
+
+.build p {
+  color: rgb(148, 163, 184);
   width: 70%;
 }
-.landing-form{
+
+.landing-form {
   background-color: #1E293A;
+ }
+
+.landing-form h4 {
+  color:
+    rgb(51, 65, 85);
+  font-size: 24px;
 }
-.landing-form h4{
-  color: 
-rgb(51, 65, 85);
-font-size: 24px;
+
+.landing-form p {
+  color: rgb(100, 116, 139);
 }
-.landing-form p{
-  color:rgb(100, 116, 139);
+
+.landing-hero {
+  height: 70vh !important;
 }
+
 @media (max-width: 768px) {
-  .profile-set {
-    position: absolute;
-    left: 0px !important;
+
+  .working-img img {
+    height: 20vh;
+    object-fit: cover;
+  }
+
+  .working-img .card-body {
+    padding: 30px;
   }
 
   .profile-main {
     height: 50vh;
   }
-  .profile-content .paragraph{
-    /* width: 100%; */
+
+  .growing-pic img {
+    height: 50vh;
   }
 }
 
@@ -540,22 +646,14 @@ font-size: 24px;
     margin-top: 20px;
   }
 
-  .main-content {
-    margin-left: 0;
-    width: 100% !important;
-  }
-
   .profile-set {
     position: absolute;
     left: 0px !important;
   }
 
-  .profile-footer {
-    margin-top: 30px;
-  }
 
   .profile-main {
-    height: 40vh;
+    height: 50vh;
   }
 
   .setting-side2 {
@@ -563,4 +661,21 @@ font-size: 24px;
     text-align: left;
   }
 
+  .profile-btn {
+    margin-top: 20px !important;
+  }
+
+  .profile-pic {
+    margin-left: 50px !important;
+  }
+
+  .working .paras {
+    width: 100% !important;
+  }
+
+  .growing-pic img {
+    height: 50vh;
+    width: 100%;
+  }
+ 
 }

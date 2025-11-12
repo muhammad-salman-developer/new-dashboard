@@ -35,7 +35,7 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
               <ul class="navbar-nav ms-auto">
                 <li class="nav-item dropdown">
-                  <a class="nav-link  text-white fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">DEMO PAGES</a>
+                  <a class="nav-link text-white fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">DEMO PAGES</a>
                   <ul class="dropdown-menu p-2">
                     <p>admin layout</p>
                     <li><a class="dropdown-item" href="index.html">Dashboard</a></li>
@@ -73,9 +73,9 @@
       <section class="py-5 login">
         <div class="container">
           <div class="row w-100 mx-auto gy-5 justify-content-center">
-              <div class="col-lg-4 col-md-12 col-sm-12 col-12">
-                <form>
-                  <div class="bg-body-secondary p-5 pt-4 rounded-3">
+            <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+              <form method="post">
+                <div class="bg-body-secondary p-5 pt-4 rounded-3">
                   <p class="fw-bolder">Sign in with</p>
                   <div class="text-center login-btn">
                     <button class="btn bg-white text-uppercase fw-bold"><i class="fa-brands fa-github"></i> git hub</button>
@@ -85,24 +85,24 @@
                   <p class="text-secondary fw-semibold">Or sign in with credentials</p>
                   <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label text-uppercase fw-bold">Email</label>
-                    <input type="email" class="form-control shadow-none" id="exampleInputEmail1" placeholder="Email" aria-describedby="emailHelp" />
+                    <input type="email" name="email" autocomplete="email" class="form-control shadow-none" id="exampleInputEmail1" required placeholder="Email" aria-describedby="emailHelp" />
                   </div>
                   <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label text-uppercase fw-bold">Password</label>
-                    <input type="password" class="form-control shadow-none" id="exampleInputPassword1" placeholder="Password" />
+                    <input type="password" class="form-control shadow-none" autocomplete="current-password" id="exampleInputPassword1" required placeholder="Password" />
                   </div>
                   <div class="mb-3 form-check">
                     <input type="checkbox" class="form-check-input shadow-none border-2 p-2" id="exampleCheck1" />
-                    <label class="form-check-label text-uppercase fw-medium" for="exampleCheck1 ">Remember me</label>
+                    <label class="form-check-label text-uppercase fw-medium" for="exampleCheck1">Remember me</label>
                   </div>
                   <button type="submit" class="btn btn-primary w-100 text-uppercase border-0">sign in</button>
-                  </div>
-                </form>
-                <div class="d-flex justify-content-between mt-4 login-link">
-                  <a href="#" class="text-decoration-none text-white">Forgot password?</a>
-                  <a href="register.html " class="text-decoration-none text-white">Create new account</a>
                 </div>
+              </form>
+              <div class="d-flex justify-content-between mt-4 login-link">
+                <a href="#" class="text-decoration-none text-white">Forgot password?</a>
+                <a href="register.html " class="text-decoration-none text-white">Create new account</a>
               </div>
+            </div>
           </div>
         </div>
       </section>
@@ -110,11 +110,11 @@
       <!-- login form end -->
 
       <!-- footer start -->
-      <footer class="">
-        <div class="container-fluid">
+      <footer>
+        <div class="container">
           <div class="row w-100 mx-auto">
-            <div class="col-lg-6 col-md-12 col-sm-12 mt-3">
-              <p>Copyright © 2025 <span class="text-white">Creative Tim</span> | Distributed by <span class="text-white">ThemeWagon</span></p>
+            <div class="col-lg-6 col-md-12 col-sm-12 mt-3 ">
+              <p class=" m-auto">Copyright © 2025 <span class="text-white">Creative Tim</span> | Distributed by <span class="text-white">ThemeWagon</span></p>
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 mt-3">
               <ul class="list-unstyled d-flex gap-3 align-items-center justify-content-center">

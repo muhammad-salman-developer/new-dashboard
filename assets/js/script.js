@@ -139,16 +139,38 @@ var chart = new ApexCharts(document.querySelector("#chart1"), options);
 chart.render();
 
 
-// let table = new DataTable('#usersTable', {
-//         pageLength: 4,
-//         lengthMenu: [4, 5, 6],
-//         responsive: true,
-//         ordering: true,
-//         order: [[1, 'asc']]
-//     });
+
 
   $(document).ready(function() {
     $('#usersTable').DataTable({
+      pageLength: 4,
+      lengthMenu: [4, 5, 6],
+      responsive: true,
+      ordering: false
+    });
+  });
+
+   
+  $(document).ready(function() {
+    $('#usersTable1').DataTable({
+      pageLength: 4,
+      lengthMenu: [4, 5, 6],
+      responsive: true,
+      ordering: false
+    });
+  });
+
+    $(document).ready(function() {
+    $('#myTable2').DataTable({
+      pageLength: 4,
+      lengthMenu: [4, 5, 6],
+      responsive: true,
+      ordering: false
+    });
+  });
+
+    $(document).ready(function() {
+    $('#myTable3').DataTable({
       pageLength: 4,
       lengthMenu: [4, 5, 6],
       responsive: true,
