@@ -44,11 +44,7 @@
   font-size: 17px !important;
 }
 
-/* .aside-bar {
-  height:100vh !important;
-  overflow-x: hidden;
-  position: fixed;
-} */
+
 
 aside p {
   font-size: 12px;
@@ -57,10 +53,6 @@ aside p {
   color: rgb(100, 116, 139);
 }
 
-/* .main-content {
-  width: 83%;
-  margin-left: 220px;
-} */
 
 /* navbar */
 
@@ -237,7 +229,7 @@ table.custom-table tr td img {
 }
 
 .table-overlay2 {
-  margin-top: -70px !important;
+  bottom: 60px;
   width: 100% !important;
 }
 
@@ -255,7 +247,7 @@ table.custom-table tr td img {
   color: white !important;
 }
 
-.custom-table2{
+.custom-table2 {
   background-color: #075985 !important;
 }
 
@@ -604,11 +596,10 @@ table.custom-table tr td img {
 
 .landing-form {
   background-color: #1E293A;
- }
+}
 
 .landing-form h4 {
-  color:
-    rgb(51, 65, 85);
+  color: rgb(51, 65, 85);
   font-size: 24px;
 }
 
@@ -637,6 +628,11 @@ table.custom-table tr td img {
 
   .growing-pic img {
     height: 50vh;
+  }
+
+  .setting-content .paragraph {
+    width: 100%;
+    text-align: justify;
   }
 }
 
@@ -675,7 +671,13 @@ table.custom-table tr td img {
 
   .growing-pic img {
     height: 50vh;
+  }
+
+  .growing-pic {
     width: 100%;
   }
- 
+
+  .profile-footer2 {
+    padding-top: 100px;
+  }
 }
